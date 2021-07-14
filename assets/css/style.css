@@ -115,11 +115,8 @@ main {
    cursor: pointer;
 }
 
-
-
 .player:hover {
    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
-   
 }
 
 figure img {
@@ -139,7 +136,6 @@ figure figcaption {
 .player p {
    color: #6c6c6c;
 }
-
 
 /*---- newsletter css ----*/
 
@@ -182,7 +178,7 @@ form input {
    color: #2d25a0;
    font-family: inherit;
    font-size: 1rem;
-   transition: all .3s;
+   transition: all 0.3s;
 }
 
 form input:focus {
@@ -257,7 +253,6 @@ form input:focus {
    padding: 0.6rem 1rem;
 }
 
-
 /*---- footer css ----*/
 
 footer {
@@ -295,7 +290,7 @@ footer img {
 .social-nav li a {
    color: #969bab;
    border-radius: 50%;
-   transition: all .3s;
+   transition: all 0.3s;
 }
 .social-nav li a i {
    font-size: 17px;
@@ -310,9 +305,11 @@ footer p {
    margin-bottom: 64px;
 }
 
-/*---- ----------
+/*---- ---------------------------
 media queries 
-----------------*/
+---------------------------------*/
+
+
 /* for phones */
 
 @media only screen and (max-width: 688px) {
@@ -362,7 +359,7 @@ media queries
    }
 
    .newsletter {
-   height:auto;
+      height: auto;
       background-image: linear-gradient(112deg, #ffffffdc 50%, #ffffffdc 50%),
          linear-gradient(rgba(0, 0, 0, 0.451), rgba(0, 0, 0, 0.451)),
          url(../images/messi.jpg);
@@ -394,7 +391,7 @@ media queries
 
 /* for tablets */
 
-@media only screen and (min-width: 689px) and (max-width: 992px){
+@media only screen and (min-width: 689px) and (max-width: 992px) {
    main {
       margin-bottom: 47px;
       padding: 0 15px;
@@ -424,23 +421,23 @@ media queries
       height: 359px;
    }
 
-    /* players section */
+   /* players section */
 
-    .players {
+   .players {
       display: grid;
       grid-template-columns: repeat(2, 330px);
       grid-row-gap: 24px;
       justify-content: center;
    }
 
-    /* news letter section */
+   /* news letter section */
 
-    .newsletter-section {
+   .newsletter-section {
       margin-top: 47px;
    }
 
    .newsletter {
-   height:auto;
+      height: auto;
       background-image: linear-gradient(112deg, #ffffffdc 50%, #ffffffdc 50%),
          linear-gradient(rgba(0, 0, 0, 0.451), rgba(0, 0, 0, 0.451)),
          url(../images/messi.jpg);
@@ -465,11 +462,11 @@ media queries
       grid-template-columns: repeat(2, 330px);
       justify-content: center;
    }
-
-
 }
 
-@media only screen and (min-width: 993px) and (max-width: 1200px){
+/* for medium screen */
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
    .container {
       width: 100%;
    }
@@ -507,5 +504,4 @@ media queries
       grid-gap: 20px;
       justify-content: center;
    }
-   
 }
