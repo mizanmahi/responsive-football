@@ -89,6 +89,28 @@ body {
 .header__content__img img {
    width: 556px;
    height: 438px;
+   cursor: pointer;
+   transition: all .3s;
+   animation-name: slide-in-up;
+   animation-duration: .8s;
+   animation-timing-function: ease-out;
+}
+
+.header__content__img img:hover {
+   transform: scale(1.05);
+}
+
+
+@keyframes slide-in-up {
+   0% {
+      transform: translateY(-500px);
+   }
+   75% {
+      transform: translateY(50px);
+   }
+   100% {
+      transform: translateY(0);
+   }
 }
 
 /* main css */
@@ -116,7 +138,7 @@ main {
 }
 
 .player:hover {
-   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
+   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.35);
 }
 
 figure img {
@@ -214,6 +236,12 @@ form input:focus {
    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
    padding: 0.9rem;
 }
+
+.latest-news .news:hover {
+   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.35);
+
+}
+
 .latest-news .news .thumbnail img {
    width: 100%;
 }
