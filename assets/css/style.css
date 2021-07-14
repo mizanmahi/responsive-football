@@ -90,9 +90,9 @@ body {
    width: 556px;
    height: 438px;
    cursor: pointer;
-   transition: all .3s;
+   transition: all 0.3s;
    animation-name: slide-in-up;
-   animation-duration: .8s;
+   animation-duration: 0.8s;
    animation-timing-function: ease-out;
 }
 
@@ -100,7 +100,7 @@ body {
    transform: scale(1.05);
 }
 
-
+/* animation */
 @keyframes slide-in-up {
    0% {
       transform: translateY(-500px);
@@ -239,7 +239,6 @@ form input:focus {
 
 .latest-news .news:hover {
    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.35);
-
 }
 
 .latest-news .news .thumbnail img {
@@ -336,7 +335,6 @@ footer p {
 /*---- ---------------------------
 media queries 
 ---------------------------------*/
-
 
 /* for phones */
 
